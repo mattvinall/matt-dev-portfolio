@@ -17,23 +17,23 @@ export const bio = {
   principles: [
     {
       number: "01",
-      title: "Schema first. Failure modes second. Happy path last.",
-      body: "Most production bugs live in the gap between what a system claims to guarantee and what it actually enforces. I find them faster by starting at the data layer and working outward, not the other way around.",
+      title: "I ship products, not features.",
+      body: "Two SaaS products to paying customers in the last year, as the only engineer on both. Pipeline (100+ API routes, 11 production AI agents on Claude, hosted MCP server) and DMAND (LinkedIn message co-pilot, 3 to 5x reply rates without sounding like AI). Built from zero.",
     },
     {
       number: "02",
-      title: "The model call is the easy part.",
-      body: "Evals, retries, cost ceilings, graceful degradation, the cache that keeps the third call sub-second. That is where AI products earn trust. I spend my time there, not on the prompt.",
+      title: "The same person writes the code, runs the demo, onboards the customer.",
+      body: "At DMAND I owned everything end to end. Code, demo calls, onboarding, iteration. The shortest distance between a user complaint and a fix is one engineer who can do all three. It also means the next thing I build is usually the thing the user actually needed.",
     },
     {
       number: "03",
-      title: "Code, demos, customer calls. Same week.",
-      body: "I have shipped two SaaS products to paying customers in the last year. Writing the code is the easy half. The harder half is staying close enough to users that the next thing I build is the thing they actually need.",
+      title: "Tests from day one. Multi-tier, no shortcuts.",
+      body: "Jest for unit and integration. Playwright for E2E. A dedicated regression suite for the LinkedIn Sales Navigator integration, because that surface broke things every week. Tests are the cheapest insurance I have found for moving fast without shipping bugs to paying customers.",
     },
     {
       number: "04",
-      title: "Net-negative is a feature.",
-      body: "Most of my best PRs delete more lines than they add. Short files, narrow interfaces, no abstractions until they earn their keep. Codebases that hold together at scale are the ones that resist the urge to generalize early.",
+      title: "Claude Code is the dev environment.",
+      body: "Both Pipeline and DMAND were built primarily through Claude Code. The throughput is the reason one engineer can ship what used to need a team of five. I treat AI as a primary tool, not autocomplete.",
     },
   ],
 } as const;
