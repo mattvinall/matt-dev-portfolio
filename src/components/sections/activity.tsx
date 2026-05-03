@@ -3,7 +3,7 @@ import { ActivityHeader } from "@/components/sections/activity-header";
 
 export function Activity() {
   return (
-    <section id="activity" className="mx-auto max-w-5xl px-6 py-24">
+    <section id="activity" className="mx-auto max-w-6xl px-6 py-24">
       <ActivityHeader />
       <div className="mt-8">
         <GitHubContributions username="mattvinall" />
