@@ -15,7 +15,7 @@ async function fetchContributions(username: string): Promise<ApiResponse | null>
     const timeout = setTimeout(() => controller.abort(), 8000);
     const res = await fetch(
       `https://github-contributions-api.jogruber.de/v4/${username}?y=last`,
-      { next: { revalidate: 86400 }, signal: controller.signal }
+      { next: { revalidate: 3600 }, signal: controller.signal }
     );
     clearTimeout(timeout);
     if (!res.ok) return null;

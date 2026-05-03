@@ -38,6 +38,24 @@ export const stackPillars: StackPillar[] = [
   },
 ];
 
+export const claudeCodeSkills = [
+  {
+    name: "superpowers",
+    purpose:
+      "TDD, brainstorming, plan-writing, systematic debugging, parallel subagents.",
+  },
+  {
+    name: "compound-engineering",
+    purpose:
+      "Multi-agent code review, plan review, agent-native architecture patterns.",
+  },
+  {
+    name: "frontend-design",
+    purpose:
+      "Production-grade UI generation that avoids generic AI aesthetics.",
+  },
+];
+
 export const supportingStack = [
   "Clerk",
   "Stripe",

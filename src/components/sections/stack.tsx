@@ -1,6 +1,11 @@
 "use client";
 
-import { stackPillars, supportingStack, stackStatement } from "@/content/stack";
+import {
+  stackPillars,
+  supportingStack,
+  stackStatement,
+  claudeCodeSkills,
+} from "@/content/stack";
 import { FadeUp } from "@/components/motion/fade-up";
 import { AsciiDivider } from "@/components/ascii-divider";
 
@@ -78,6 +83,39 @@ export function Stack() {
           </FadeUp>
         ))}
       </ol>
+
+      {/* Inside Claude Code — workflow differentiator */}
+      <FadeUp
+        delay={0.25}
+        className="mt-12 overflow-hidden rounded-xl border border-accent/30 bg-gradient-to-br from-surface to-bg p-7"
+      >
+        <div className="flex items-baseline justify-between gap-4">
+          <h3 className="font-serif text-2xl text-text">
+            Inside <span className="italic text-accent">Claude Code</span>.
+          </h3>
+          <span className="font-mono text-xs uppercase tracking-widest text-text-muted">
+            Workflow
+          </span>
+        </div>
+        <p className="mt-3 max-w-2xl font-serif text-base italic leading-snug text-text-muted">
+          Custom skill bundles that compound the agent&apos;s output. The reason one
+          engineer can ship at the velocity of a team.
+        </p>
+
+        <ul className="mt-7 grid gap-4 md:grid-cols-3">
+          {claudeCodeSkills.map((skill) => (
+            <li
+              key={skill.name}
+              className="rounded-lg border border-border bg-bg/50 p-5 transition-colors hover:border-accent/50"
+            >
+              <div className="font-mono text-sm text-accent">{skill.name}</div>
+              <p className="mt-2 text-sm leading-relaxed text-text-muted">
+                {skill.purpose}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </FadeUp>
 
       {/* Supporting toolkit row */}
       <FadeUp delay={0.3} className="mt-12 rounded-xl border border-dashed border-border p-7">
