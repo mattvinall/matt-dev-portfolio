@@ -23,9 +23,9 @@ export default function Page() {
         <Marquee />
         <About />
         <Stack />
+        <Activity />
         <Work />
         <Experience />
-        <Activity />
         <Contact />
       </main>
     </>

@@ -13,9 +13,9 @@ export function Header() {
         <nav className="hidden gap-6 font-mono text-xs uppercase tracking-widest text-text-muted md:flex">
           <Link href="#about" className="hover:text-text">About</Link>
           <Link href="#stack" className="hover:text-text">Stack</Link>
+          <Link href="#activity" className="hover:text-text">Activity</Link>
           <Link href="#work" className="hover:text-text">Work</Link>
           <Link href="#experience" className="hover:text-text">Experience</Link>
-          <Link href="#activity" className="hover:text-text">Activity</Link>
           <Link href="#contact" className="hover:text-text">Contact</Link>
         </nav>
         <ThemeToggle />
