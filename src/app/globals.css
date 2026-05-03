@@ -1,26 +1,98 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root,
+[data-theme="editorial"] {
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --text: #fafafa;
+  --text-muted: #a1a1aa;
+  --accent: #f97316;
+  --accent-secondary: #f97316;
+  --border: #262626;
+}
+
+[data-theme="terminal"] {
+  --bg: #0d0f0c;
+  --surface: #11140f;
+  --text: #d4d4aa;
+  --text-muted: #7a7d65;
+  --accent: #f97316;
+  --accent-secondary: #a3e635;
+  --border: #2a2d22;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-secondary);
+  --color-border: var(--border);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument-serif);
+
+  --tracking-tightest: -0.04em;
+
+  --animate-float: float 3s ease-in-out infinite;
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-blink: blink 1s step-end infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes float {
+  0%, 100% { transform: translateY(-3px); }
+  50% { transform: translateY(3px); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 400ms ease, color 400ms ease;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+[data-theme="terminal"] .font-serif {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-style: normal;
+  letter-spacing: -0.02em;
+}
+
+[data-theme="terminal"] .font-serif .italic {
+  font-style: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }

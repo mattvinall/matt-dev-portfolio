@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Matt Vinall · Developer Portfolio
 
-## Getting Started
+Single-page portfolio at [matt-dev.vercel.app](https://matt-dev.vercel.app).
 
-First, run the development server:
+Two complete design systems toggled by the user:
+
+- **Editorial** (default) — dark theme, serif/sans hybrid typography, asymmetric grid
+- **Terminal** — mono-only, git-log project cards, ASCII dividers
+
+## Stack
+
+Next.js 16 · React 19 · TypeScript · Tailwind CSS v4 · Framer Motion · next-themes
+
+## Develop
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Edit content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All copy lives in `src/content/`:
 
-## Learn More
+- `bio.ts` — name, title, contact, about paragraphs
+- `projects.ts` — featured work
+- `stack.ts` — categorized tech stack
+- `experience.ts` — career timeline
 
-To learn more about Next.js, take a look at the following resources:
+## Replace portrait
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The hero portrait is a placeholder SVG at `public/portrait.svg`. To use a real photo:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Process the source image to remove the white background (transparent PNG)
+2. Save as `public/portrait.png`
+3. Update `src/components/portrait.tsx` to reference `/portrait.png`
 
-## Deploy on Vercel
+## Replace project screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Screenshots live at `public/screenshots/<slug>.png`. To refresh:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Open each project URL at 1440×900 viewport
+2. Capture and save as `public/screenshots/<slug>.png`
+3. Update the `screenshot` field in `src/content/projects.ts` if the path changes
+
+## Deploy
+
+Pushed to `main` on GitHub. Vercel auto-deploys.
