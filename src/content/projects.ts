@@ -37,11 +37,11 @@ export const projects: Project[] = [
   {
     slug: "dmand",
     number: "02",
-    name: "Dmand AI",
-    url: "https://dmand.ai",
-    oneLiner: "The GTM engine for healthcare sales.",
+    name: "DMAND",
+    url: "https://trydmand.ai",
+    oneLiner: "3 to 5x your LinkedIn response rates without sounding like AI.",
     description:
-      "AI-powered prospecting platform for healthcare. Surfaces relevant HCPs and HCOs, generates ROI-driven sales pitches, and streamlines provider research. Server-rendered with App Router on Vercel.",
+      "LinkedIn message co-pilot for founders, coaches, and B2B teams. Analyzes the user's offering, builds personalized outreach, and keeps accounts safe. Instant 2-minute setup, AI-generated messages that read human.",
     stack: ["Next.js", "TypeScript", "Tailwind", "AI", "Vercel"],
     screenshot: "/screenshots/dmand.png",
     year: "2026",

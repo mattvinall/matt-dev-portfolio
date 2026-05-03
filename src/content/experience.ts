@@ -15,10 +15,10 @@ export const experience: ExperienceEntry[] = [
   },
   {
     role: "Founder & Engineer",
-    company: "Dmand",
+    company: "DMAND",
     period: "2025 → Present",
     summary:
-      "Designed and shipped the Dmand marketing surface and lead-generation engine.",
+      "Designed and shipped the DMAND marketing surface and lead-generation engine.",
   },
   {
     role: "Independent Engineer & Builder",
