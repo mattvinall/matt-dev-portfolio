@@ -23,7 +23,7 @@ export const bio = {
     {
       number: "02",
       title: "The same person writes the code, runs the demo, onboards the customer.",
-      body: "At DMAND and Pipeline I have owned everything end to end. Code, demo calls, onboarding, iteration. The shortest distance between a user complaint and a fix is one engineer who can do all three. It also means the next thing I build is usually the thing the user actually needed.",
+      body: "At Pipeline and DMAND I have owned everything end to end. Code, demo calls, onboarding, iteration. The shortest distance between a user complaint and a fix is one engineer who can do all three. It also means the next thing I build is usually the thing the user actually needed.",
     },
     {
       number: "03",
