@@ -6,7 +6,7 @@ import { AsciiDivider } from "@/components/ascii-divider";
 
 export function Stack() {
   return (
-    <section id="stack" className="mx-auto max-w-6xl px-6 py-32">
+    <section id="stack" className="mx-auto max-w-6xl px-6 py-16">
       <AsciiDivider label="stack" />
 
       <div className="mt-6 flex items-end justify-between gap-6">

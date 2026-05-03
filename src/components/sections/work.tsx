@@ -7,7 +7,7 @@ import { ProjectCard } from "@/components/project-card";
 
 export function Work() {
   return (
-    <section id="work" className="mx-auto max-w-6xl px-6 py-24">
+    <section id="work" className="mx-auto max-w-6xl px-6 py-16">
       <AsciiDivider label="work" />
       <FadeUp as="h2" className="mt-6 font-serif text-4xl text-text md:text-5xl">
         Selected <span className="italic text-accent">work</span>.

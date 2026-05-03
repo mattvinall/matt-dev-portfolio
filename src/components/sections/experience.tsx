@@ -6,12 +6,12 @@ import { AsciiDivider } from "@/components/ascii-divider";
 
 export function Experience() {
   return (
-    <section id="experience" className="mx-auto max-w-4xl px-6 py-24">
+    <section id="experience" className="mx-auto max-w-6xl px-6 py-16">
       <AsciiDivider label="experience" />
       <FadeUp as="h2" className="mt-6 font-serif text-4xl text-text md:text-5xl">
         Where I have <span className="italic text-accent">built</span>.
       </FadeUp>
-      <ol className="mt-12 space-y-10">
+      <ol className="mt-12 max-w-4xl space-y-10">
         {experience.map((entry, i) => (
           <FadeUp
             key={`${entry.company}-${entry.period}`}
@@ -38,7 +38,7 @@ export function Experience() {
         ))}
       </ol>
 
-      <FadeUp delay={0.2} className="mt-16 grid gap-6 border-t border-border pt-10 md:grid-cols-2">
+      <FadeUp delay={0.2} className="mt-16 grid max-w-4xl gap-6 border-t border-border pt-10 md:grid-cols-2">
         <div>
           <div className="font-mono text-xs uppercase tracking-widest text-text-muted">
             Certifications

@@ -13,7 +13,7 @@ const links = [
 
 export function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-4xl px-6 py-24">
+    <section id="contact" className="mx-auto max-w-6xl px-6 py-16">
       <AsciiDivider label="contact" />
       <FadeUp as="h2" className="mt-6 font-serif text-4xl text-text md:text-5xl">
         Let&apos;s <span className="italic text-accent">build</span>.
@@ -21,7 +21,7 @@ export function Contact() {
       <FadeUp as="p" delay={0.05} className="mt-4 max-w-xl text-text-muted">
         Currently open to senior and staff engineering roles, contract work, and founding-engineer conversations.
       </FadeUp>
-      <ul className="mt-10 grid gap-4">
+      <ul className="mt-10 grid max-w-4xl gap-4">
         {links.map((link, i) => (
           <FadeUp key={link.label} delay={0.05 + i * 0.05} as="li">
             <Link

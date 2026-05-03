@@ -6,7 +6,7 @@ import { AsciiDivider } from "@/components/ascii-divider";
 
 export function About() {
   return (
-    <section id="about" className="mx-auto max-w-5xl px-6 py-24">
+    <section id="about" className="mx-auto max-w-6xl px-6 py-16">
       <AsciiDivider label="about" />
       <FadeUp as="h2" className="mt-6 font-serif text-4xl text-text md:text-5xl">
         How I <span className="italic text-accent">think.</span>
