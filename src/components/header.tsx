@@ -15,6 +15,7 @@ export function Header() {
           <Link href="#stack" className="hover:text-text">Stack</Link>
           <Link href="#work" className="hover:text-text">Work</Link>
           <Link href="#experience" className="hover:text-text">Experience</Link>
+          <Link href="#activity" className="hover:text-text">Activity</Link>
           <Link href="#contact" className="hover:text-text">Contact</Link>
         </nav>
         <ThemeToggle />

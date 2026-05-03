@@ -48,34 +48,6 @@ export function About() {
         ))}
       </ol>
 
-      <FadeUp delay={0.3} className="mt-20 border-t border-border pt-10">
-        <div className="grid gap-6 sm:grid-cols-3">
-          <div>
-            <div className="font-mono text-xs uppercase tracking-widest text-text-muted">
-              Years building
-            </div>
-            <div className="mt-2 font-serif text-4xl text-text">
-              <span className="text-accent">{bio.yearsExperience}</span>
-            </div>
-          </div>
-          <div>
-            <div className="font-mono text-xs uppercase tracking-widest text-text-muted">
-              Production AI agents shipped
-            </div>
-            <div className="mt-2 font-serif text-4xl text-text">
-              <span className="text-accent">11</span>
-            </div>
-          </div>
-          <div>
-            <div className="font-mono text-xs uppercase tracking-widest text-text-muted">
-              Products launched end to end
-            </div>
-            <div className="mt-2 font-serif text-4xl text-text">
-              <span className="text-accent">4</span>
-            </div>
-          </div>
-        </div>
-      </FadeUp>
     </section>
   );
 }

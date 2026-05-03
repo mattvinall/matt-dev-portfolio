@@ -5,6 +5,7 @@ import { About } from "@/components/sections/about";
 import { Stack } from "@/components/sections/stack";
 import { Work } from "@/components/sections/work";
 import { Experience } from "@/components/sections/experience";
+import { Activity } from "@/components/sections/activity";
 import { Contact } from "@/components/sections/contact";
 
 export default function Page() {
@@ -24,6 +25,7 @@ export default function Page() {
         <Stack />
         <Work />
         <Experience />
+        <Activity />
         <Contact />
       </main>
     </>
