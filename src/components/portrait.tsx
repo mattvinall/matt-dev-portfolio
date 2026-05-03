@@ -20,7 +20,7 @@ export function Portrait() {
       )}
     >
       <Image
-        src="/portrait.svg"
+        src="/portrait.png"
         alt="Portrait of Matt Vinall"
         fill
         sizes="(max-width: 768px) 80vw, 420px"

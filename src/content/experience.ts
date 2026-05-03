@@ -14,11 +14,11 @@ export const experience: ExperienceEntry[] = [
       "Building Pipeline end to end. Architecture, schema, agents, UX, billing, and the hosted MCP server. Scaled to dozens of paying workspaces.",
   },
   {
-    role: "Founder & Engineer",
+    role: "Co-Founder & CTO",
     company: "DMAND",
     period: "2025 → Present",
     summary:
-      "Designed and shipped the DMAND marketing surface and lead-generation engine.",
+      "Co-founded DMAND, a LinkedIn message co-pilot that gets founders 3 to 5x reply rates without sounding like AI. Own the full product and engineering stack: AI personalization layer, LinkedIn-safe sending, smart business analysis, and the marketing surface.",
   },
   {
     role: "Independent Engineer & Builder",
